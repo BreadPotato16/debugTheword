@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debug the Word</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+        <!-- High Score Display (Upper Left) -->
+        <div class="top-left-score">
+            <h4>🏆Highest Score</h4>
+            <p>General IT: <span id="itScore">0</span></p>
+            <p>HTML: <span id="htmlScore">0</span></p>
+            <p>CSS: <span id="cssScore">0</span></p>
+            <p>JS: <span id="jsScore">0</span></p>
+        </div>
+
+        <!-- Front Page / Play Screen -->
+        <div class="front-container">
+            <h1 class="game-title">Debug the Word</h1>
+            <button id="playBtn" class="play-btn">Play</button>
+        </div>
+
+        <!-- Category Selection Page -->
+        <div class="category-container" id="categoryPage" style="display:none;">
+            <h1 class="game-title">Select Category</h1>
+            <button class="category-btn">HTML</button>
+            <button class="category-btn">CSS</button>
+            <button class="category-btn">JavaScript</button>
+            <button class="category-btn">General IT</button>
+            <button class="category-btn">Random Mode</button>
+        </div>
+
+        <!-- GAME PAGE -->
+        <div class="game-container" id="gamePage" style="display:none;">
+
+            <h1 class="game-title" id="gameCategoryTitle">Category</h1>
+
+            <div class="word-box">
+                <p id="scrambledWord">loading...</p>
+            </div>
+
+            <!-- Terminal-style input -->
+            <div class="terminal-input">
+                <span class="prompt">></span>
+                <input type="text" id="answerInput" class="answer-input" autocomplete="off">
+            </div>
+
+            <!-- Word Definition -->
+            <p id="wordDefinition" class="definition-text">Definition appears here...</p>
+
+
+            <!-- Buttons -->
+            <div class="game-buttons">
+                <button id="nextBtn" class="game-btn">Next</button>
+            </div>
+
+
+            <!-- Score -->
+            <h3>Score: <span id="currentScore">0</span> | Lives: <span id="currentLives">3</span></h3>
+
+        </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

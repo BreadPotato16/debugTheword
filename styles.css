@@ -1,0 +1,131 @@
+body {
+  background: black;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: #00942a;
+  min-height: 100vh;
+  padding-top: 20px;
+  margin: 0;
+}
+.top-left-score {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  padding: 6px 10px;
+  border: 1px solid #00942a;
+  font-size: 14px;
+}
+.top-left-score span { font-weight: bold; color: #00942a;; }
+
+.front-container, .category-container {
+  margin-top: 40vh;
+  width: 360px;
+  background: black;
+  padding: 20px;
+  border: 2px solid #00942a;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.game-title {
+  margin: 0 0 15px 0;
+  font-size: 26px;
+}
+.play-btn, .category-btn {
+  margin-top: 10px;
+  padding: 10px 16px;
+  border: 2px solid #00942a;;
+  background: black;
+  color: #00942a;
+  cursor: pointer;
+}
+.play-btn:hover, .category-btn:hover {
+  background: #00942a;
+  color: black;
+}
+
+.game-container {
+  width: 360px;
+  background: black;
+  padding: 20px;
+  border: 2px solid #00942a;
+  text-align: center;
+  margin: 40px auto 0 auto;
+}
+
+.word-box {
+  border: 2px solid #00942a;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.answer-input {
+  width: 80%;
+  padding: 10px;
+  background: black;
+  border: 2px solid #00942a;
+  color: #00942a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.game-buttons {
+  margin-top: 10px;
+}
+
+.game-btn {
+  padding: 10px 16px;
+  border: 2px solid #00942a;
+  background: black;
+  color: #00942a;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.game-btn:hover {
+  background: #00942a;
+  color: black;
+}
+
+/* Terminal input line (like a hacking console) */
+.terminal-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  width: 80%;
+  margin: 0 auto 12px auto;
+  border: 2px solid #00942a;
+  padding: 8px;
+}
+
+.prompt {
+  color: #00942a;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.answer-input {
+  flex: 1;
+  background: black;
+  border: none;
+  outline: none;
+  color: #00942a;
+  font-size: 18px;
+  caret-color: #00942a;
+}
+
+/* Definition text */
+.definition-text {
+  margin-top: 10px;
+  color: #00942a;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+@media(max-width:420px) {
+  .front-container, .category-container { width: 90%; padding: 16px; }
+  .game-title { font-size: 20px; }
+  .top-left-score { font-size: 12px; padding: 6px 8px; }
+}
